@@ -81,18 +81,20 @@
 
 
 
-<meta name="description" content="题目描述：给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。 你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。">
+<meta name="description" content="LeetCode 1: 两数之和 给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。">
 <meta name="keywords" content="算法">
 <meta property="og:type" content="article">
-<meta property="og:title" content="两数之和">
+<meta property="og:title" content="LeetCode 1: 两数之和">
 <meta property="og:url" content="http://nonone.cc/2018/09/07/两数之和/index.html">
 <meta property="og:site_name" content="NonOne&#39;s Blog">
-<meta property="og:description" content="题目描述：给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。 你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。">
+<meta property="og:description" content="LeetCode 1: 两数之和 给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-07T08:44:24.013Z">
+<meta property="og:image" content="http://www.hnxhwhcm.com/blog/images/leetCode-twoSum.png">
+<meta property="og:updated_time" content="2018-09-07T10:01:20.672Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="两数之和">
-<meta name="twitter:description" content="题目描述：给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。 你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。">
+<meta name="twitter:title" content="LeetCode 1: 两数之和">
+<meta name="twitter:description" content="LeetCode 1: 两数之和 给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。">
+<meta name="twitter:image" content="http://www.hnxhwhcm.com/blog/images/leetCode-twoSum.png">
 
 
 
@@ -128,7 +130,7 @@
 
 
 
-  <title>两数之和 | NonOne's Blog</title>
+  <title>LeetCode 1: 两数之和 | NonOne's Blog</title>
   
 
 
@@ -282,7 +284,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">两数之和</h1>
+          <h1 class="post-title" itemprop="name headline">LeetCode 1: 两数之和</h1>
         
 
         <div class="post-meta">
@@ -294,7 +296,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-07T19:41:55+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-07T00:00:00+08:00">
                 2018-09-07
               </time>
             
@@ -317,8 +319,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/leetCode/" itemprop="url" rel="index">
-                    <span itemprop="name">leetCode</span>
+                  <a href="/categories/LeetCode/" itemprop="url" rel="index">
+                    <span itemprop="name">LeetCode</span>
                   </a>
                 </span>
 
@@ -354,8 +356,39 @@
       
 
       
-        <p>题目描述：<br>给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。</p>
+        <p><strong>LeetCode 1: 两数之和</strong></p>
+<p>给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。</p>
+<a id="more"></a>
+<p>LeetCode是许多欧美IT公司招聘工程师经常使用的算法题库，学习算法最重要的是不断积累。</p>
+<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p><strong>LeetCode 1: 两数之和</strong></p>
+<p>给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。</p>
 <p>你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。</p>
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><blockquote>
+<p>给定 nums = [2, 7, 11, 15], target = 9</p>
+<p>因为 nums[0] + nums[1] = 2 + 7 = 9</p>
+<p>所以返回 [0, 1]</p>
+</blockquote>
+<h3 id="解答思路"><a href="#解答思路" class="headerlink" title="解答思路"></a>解答思路</h3><p>只要循环判断数组中的两个值相加是否等于目标值就好了，也没有什么特别注意的坑。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><pre><code>class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        int[] result = new int[2];
+        if(nums == null || nums.length &lt; 2) {
+            return result;
+        }
+        for(int i = 0; i &lt; nums.length - 1 ;i++) {
+            for(int j = i + 1; j &lt; nums.length;j++) {
+                if(nums[i] + nums[j] == target){
+                    result[0] = i;
+                    result[1] = j;
+                    return result;
+                }
+            }
+        }
+        return result;
+    }
+}
+</code></pre><h3 id="提交结果"><a href="#提交结果" class="headerlink" title="提交结果"></a>提交结果</h3><p><img src="http://www.hnxhwhcm.com/blog/images/leetCode-twoSum.png" alt=""></p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>作为在LeetCode第一次做题，题目比较简单。</p>
 
       
     </div>
@@ -451,8 +484,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -545,6 +587,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目描述"><span class="nav-number">1.</span> <span class="nav-text">题目描述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#示例"><span class="nav-number">2.</span> <span class="nav-text">示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#解答思路"><span class="nav-number">3.</span> <span class="nav-text">解答思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码"><span class="nav-number">4.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#提交结果"><span class="nav-number">5.</span> <span class="nav-text">提交结果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">6.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
