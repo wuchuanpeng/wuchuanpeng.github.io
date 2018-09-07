@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://nonone.cc/"/>
-  <updated>2018-09-07T10:01:20.672Z</updated>
+  <updated>2018-09-07T10:09:11.603Z</updated>
   <id>http://nonone.cc/</id>
   
   <author>
@@ -21,14 +21,13 @@
     <link href="http://nonone.cc/2018/09/07/%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/"/>
     <id>http://nonone.cc/2018/09/07/两数之和/</id>
     <published>2018-09-06T16:00:00.000Z</published>
-    <updated>2018-09-07T10:01:20.672Z</updated>
+    <updated>2018-09-07T10:09:11.603Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>LeetCode 1: 两数之和</strong></p><p>给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。</p><a id="more"></a><p>LeetCode是许多欧美IT公司招聘工程师经常使用的算法题库，学习算法最重要的是不断积累。</p><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p><strong>LeetCode 1: 两数之和</strong></p><p>给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。</p><p>你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。</p><h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><blockquote><p>给定 nums = [2, 7, 11, 15], target = 9</p><p>因为 nums[0] + nums[1] = 2 + 7 = 9</p><p>所以返回 [0, 1]</p></blockquote><h3 id="解答思路"><a href="#解答思路" class="headerlink" title="解答思路"></a>解答思路</h3><p>只要循环判断数组中的两个值相加是否等于目标值就好了，也没有什么特别注意的坑。</p><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><pre><code>class Solution {    public int[] twoSum(int[] nums, int target) {        int[] result = new int[2];        if(nums == null || nums.length &lt; 2) {            return result;        }        for(int i = 0; i &lt; nums.length - 1 ;i++) {            for(int j = i + 1; j &lt; nums.length;j++) {                if(nums[i] + nums[j] == target){                    result[0] = i;                    result[1] = j;                    return result;                }            }        }        return result;    }}</code></pre><h3 id="提交结果"><a href="#提交结果" class="headerlink" title="提交结果"></a>提交结果</h3><p><img src="http://www.hnxhwhcm.com/blog/images/leetCode-twoSum.png" alt=""></p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>作为在LeetCode第一次做题，题目比较简单。</p>]]></content>
+    <content type="html"><![CDATA[<p>给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。</p><a id="more"></a><p>LeetCode是许多欧美IT公司招聘工程师经常使用的算法题库，学习算法最重要的是不断积累。</p><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p><strong>LeetCode 1: 两数之和</strong></p><p>给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。</p><p>你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。</p><h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><blockquote><p>给定 nums = [2, 7, 11, 15], target = 9</p><p>因为 nums[0] + nums[1] = 2 + 7 = 9</p><p>所以返回 [0, 1]</p></blockquote><h3 id="解答思路"><a href="#解答思路" class="headerlink" title="解答思路"></a>解答思路</h3><p>只要循环判断数组中的两个值相加是否等于目标值就好了，也没有什么特别注意的坑。</p><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><pre><code>class Solution {    public int[] twoSum(int[] nums, int target) {        int[] result = new int[2];        if(nums == null || nums.length &lt; 2) {            return result;        }        for(int i = 0; i &lt; nums.length - 1 ;i++) {            for(int j = i + 1; j &lt; nums.length;j++) {                if(nums[i] + nums[j] == target){                    result[0] = i;                    result[1] = j;                    return result;                }            }        }        return result;    }}</code></pre><h3 id="提交结果"><a href="#提交结果" class="headerlink" title="提交结果"></a>提交结果</h3><p><img src="http://www.hnxhwhcm.com/blog/images/leetCode-twoSum.png" alt=""></p><h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>作为在LeetCode第一次做题，题目比较简单。</p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;strong&gt;LeetCode 1: 两数之和&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。&lt;/p&gt;
+      &lt;p&gt;给定一个整数数组和一个目标值，找出数组中和为目标值的两个数。&lt;/p&gt;
     
     </summary>
     
