@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="JAVA, Spring, SpringCloud, 算法, Web " />
+  <meta name="keywords" content="数据库," />
 
 
 
@@ -81,16 +81,22 @@
 
 
 
-<meta name="description" content="一个认真的程序猿">
-<meta property="og:type" content="website">
-<meta property="og:title" content="NonOne&#39;s Blog">
-<meta property="og:url" content="https://www.nonone.cc/categories/leetCode/index.html">
+<meta name="description" content="通过EXCEL数据字典进行转换得到建表语句">
+<meta name="keywords" content="数据库">
+<meta property="og:type" content="article">
+<meta property="og:title" content="建表语句生成(generate-sql)">
+<meta property="og:url" content="https://www.nonone.cc/2018/11/02/generate-sql/index.html">
 <meta property="og:site_name" content="NonOne&#39;s Blog">
-<meta property="og:description" content="一个认真的程序猿">
+<meta property="og:description" content="通过EXCEL数据字典进行转换得到建表语句">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://www.hnxhwhcm.com/blog/images/tools-generate-sql-1.png">
+<meta property="og:image" content="http://www.hnxhwhcm.com/blog/images/tools-generate-sql-2.png">
+<meta property="og:image" content="http://www.hnxhwhcm.com/blog/images/tools-generate-sql-3.png">
+<meta property="og:updated_time" content="2018-11-02T06:05:57.606Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="NonOne&#39;s Blog">
-<meta name="twitter:description" content="一个认真的程序猿">
+<meta name="twitter:title" content="建表语句生成(generate-sql)">
+<meta name="twitter:description" content="通过EXCEL数据字典进行转换得到建表语句">
+<meta name="twitter:image" content="http://www.hnxhwhcm.com/blog/images/tools-generate-sql-1.png">
 
 
 
@@ -120,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="https://www.nonone.cc/categories/leetCode/"/>
+  <link rel="canonical" href="https://www.nonone.cc/2018/11/02/generate-sql/"/>
 
 
 
 
 
-  <title>分类: leetCode | NonOne's Blog</title>
+  <title>建表语句生成(generate-sql) | NonOne's Blog</title>
   
 
 
@@ -145,7 +151,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -249,55 +255,197 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>leetCode<small>分类</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.nonone.cc/2018/11/02/generate-sql/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="邬传朋">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/apple-touch-icon-next.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="NonOne's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/09/07/两数之和/" itemprop="url">
-              
-                <span itemprop="name">LeetCode 1: 两数之和</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">建表语句生成(generate-sql)</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-07T00:00:00+08:00"
-              content="2018-09-07" >
-          09-07
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-02T00:00:00+08:00">
+                2018-11-02
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/工具/" itemprop="url" rel="index">
+                    <span itemprop="name">工具</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>通过EXCEL数据字典进行转换得到建表语句</p>
+<a id="more"></a>
+<h3 id="功能说明"><a href="#功能说明" class="headerlink" title="功能说明"></a>功能说明</h3><p>在进行一个应用软件或系统的数据库设计时，我们通常会使用EXCEL进行数据表的设计，得到数据字典。得到数据字典后，再通过数据库可视化工具进行建表或通过DDL语句建表，这种建表方式及其没有效率，无数次复制粘贴，让人崩溃。</p>
+<p>能让机器做的事，就不要人工。</p>
+<p>generate-sql是通过EXCEL数据字典进行自动转换得到建表语句。</p>
+<p>使用框架：SpringBoot2.1和POI4.1</p>
+<h3 id="使用前准备"><a href="#使用前准备" class="headerlink" title="使用前准备"></a>使用前准备</h3><ul>
+<li>使用generate-sql之前请确定操作系统为Windows</li>
+<li>安装了jdk8+，并配置了环境变量</li>
+<li>按照《generate-sql帮助文档》中的数据字典文档格式约定设计的数据字典</li>
+</ul>
+<h3 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h3><ol>
+<li>通过文章下方的下载链接获取generate-sql.zip并解压</li>
+<li>双击start.bat</li>
+<li>通过浏览器访问<a href="http://localhost:9988" target="_blank" rel="noopener">http://localhost:9988</a> 会看到如下图<img src="http://www.hnxhwhcm.com/blog/images/tools-generate-sql-1.png" alt=""></li>
+<li>选择自己的数据字典</li>
+<li>修改“数据表分割字符串”（和默认值一样，就不要修改）</li>
+<li>点击提交，之后会弹出sql文件下载。</li>
+</ol>
+<h3 id="文档示例"><a href="#文档示例" class="headerlink" title="文档示例"></a>文档示例</h3><ul>
+<li>数据字典.xlsx示例</li>
+</ul>
+<p><img src="http://www.hnxhwhcm.com/blog/images/tools-generate-sql-2.png" alt=""></p>
+<ul>
+<li>生成的SQL文档(数据字典.sql)示例</li>
+</ul>
+<p><img src="http://www.hnxhwhcm.com/blog/images/tools-generate-sql-3.png" alt=""></p>
+<h3 id="下载地址及源码地址"><a href="#下载地址及源码地址" class="headerlink" title="下载地址及源码地址"></a>下载地址及源码地址</h3><p>下载地址：<a href="https://pan.baidu.com/s/1hrQdtvCZc5bAe846l4Gc7Q" target="_blank" rel="noopener">https://pan.baidu.com/s/1hrQdtvCZc5bAe846l4Gc7Q</a> 提取码：0pux </p>
+<p>源代码地址：<a href="https://github.com/wuchuanpeng/generate-sql" target="_blank" rel="noopener">https://github.com/wuchuanpeng/generate-sql</a></p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/数据库/" rel="tag"># 数据库</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/07/两数之和/" rel="next" title="LeetCode 1: 两数之和">
+                <i class="fa fa-chevron-left"></i> LeetCode 1: 两数之和
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -305,6 +453,15 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zODIzMS8xNDc1OQ=="></div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -325,8 +482,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -419,6 +585,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#功能说明"><span class="nav-number">1.</span> <span class="nav-text">功能说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用前准备"><span class="nav-number">2.</span> <span class="nav-text">使用前准备</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用步骤"><span class="nav-number">3.</span> <span class="nav-text">使用步骤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文档示例"><span class="nav-number">4.</span> <span class="nav-text">文档示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下载地址及源码地址"><span class="nav-number">5.</span> <span class="nav-text">下载地址及源码地址</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -546,6 +728,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -574,6 +760,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.nonone.cc/"/>
-  <updated>2018-09-07T15:46:24.087Z</updated>
+  <updated>2018-11-02T06:05:57.606Z</updated>
   <id>https://www.nonone.cc/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>建表语句生成(generate-sql)</title>
+    <link href="https://www.nonone.cc/2018/11/02/generate-sql/"/>
+    <id>https://www.nonone.cc/2018/11/02/generate-sql/</id>
+    <published>2018-11-01T16:00:00.000Z</published>
+    <updated>2018-11-02T06:05:57.606Z</updated>
+    
+    <content type="html"><![CDATA[<p>通过EXCEL数据字典进行转换得到建表语句</p><a id="more"></a><h3 id="功能说明"><a href="#功能说明" class="headerlink" title="功能说明"></a>功能说明</h3><p>在进行一个应用软件或系统的数据库设计时，我们通常会使用EXCEL进行数据表的设计，得到数据字典。得到数据字典后，再通过数据库可视化工具进行建表或通过DDL语句建表，这种建表方式及其没有效率，无数次复制粘贴，让人崩溃。</p><p>能让机器做的事，就不要人工。</p><p>generate-sql是通过EXCEL数据字典进行自动转换得到建表语句。</p><p>使用框架：SpringBoot2.1和POI4.1</p><h3 id="使用前准备"><a href="#使用前准备" class="headerlink" title="使用前准备"></a>使用前准备</h3><ul><li>使用generate-sql之前请确定操作系统为Windows</li><li>安装了jdk8+，并配置了环境变量</li><li>按照《generate-sql帮助文档》中的数据字典文档格式约定设计的数据字典</li></ul><h3 id="使用步骤"><a href="#使用步骤" class="headerlink" title="使用步骤"></a>使用步骤</h3><ol><li>通过文章下方的下载链接获取generate-sql.zip并解压</li><li>双击start.bat</li><li>通过浏览器访问<a href="http://localhost:9988" target="_blank" rel="noopener">http://localhost:9988</a> 会看到如下图<img src="http://www.hnxhwhcm.com/blog/images/tools-generate-sql-1.png" alt=""></li><li>选择自己的数据字典</li><li>修改“数据表分割字符串”（和默认值一样，就不要修改）</li><li>点击提交，之后会弹出sql文件下载。</li></ol><h3 id="文档示例"><a href="#文档示例" class="headerlink" title="文档示例"></a>文档示例</h3><ul><li>数据字典.xlsx示例</li></ul><p><img src="http://www.hnxhwhcm.com/blog/images/tools-generate-sql-2.png" alt=""></p><ul><li>生成的SQL文档(数据字典.sql)示例</li></ul><p><img src="http://www.hnxhwhcm.com/blog/images/tools-generate-sql-3.png" alt=""></p><h3 id="下载地址及源码地址"><a href="#下载地址及源码地址" class="headerlink" title="下载地址及源码地址"></a>下载地址及源码地址</h3><p>下载地址：<a href="https://pan.baidu.com/s/1hrQdtvCZc5bAe846l4Gc7Q" target="_blank" rel="noopener">https://pan.baidu.com/s/1hrQdtvCZc5bAe846l4Gc7Q</a> 提取码：0pux </p><p>源代码地址：<a href="https://github.com/wuchuanpeng/generate-sql" target="_blank" rel="noopener">https://github.com/wuchuanpeng/generate-sql</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;通过EXCEL数据字典进行转换得到建表语句&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工具" scheme="https://www.nonone.cc/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="数据库" scheme="https://www.nonone.cc/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+  </entry>
   
   <entry>
     <title>LeetCode 1: 两数之和</title>
